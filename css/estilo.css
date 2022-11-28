@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    line-height: 24px;
+    background-color: whi;
+}
+.ancho {
+    max-width: 1200px;
+    margin: auto;
+   
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #cc9900;
+}
+.caja_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.caja_img figure{
+    max-width: 800px;
+}
+.caja_img figure img{
+    width: 100%;
+}
+
+.caja_imag {
+background-image: url(../imagenes/1498842460740.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 0% 25%;
+height: 500px;
+}
+
+.tablas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.tablas iframe{
+    margin: 5px;
+    padding-top: 10px;
+    width: 500px;
+    height: 230px;
+    border: 1px #800000 solid;  
+}
+
+
+
+
+figure{
+    max-width: 1200px;
+}
+img{
+    max-width: 100%;
+}
+
+.contedero_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #085298;
+}
+
+.caja_int{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.caja_int p, .caja_int h2{
+   color: white;
+}
+
+.caja_derecho{
+    display: none;
+}
+
+.cont_youtube{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+.cont_youtube iframe{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(5%)
+    
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 412px){
+    .titulo{
+        font-size: 25px;
+    }
+
+    .caja_img{
+display: none;
+    }
+    
+    .tablas{
+        flex-direction: column;
+        padding-left: 0px;
+        padding-top: 0px;
+        gap: 0px;
+    }
+    .tablas iframe{
+        margin: 0px;
+        padding-top: 10px;
+        width: 100%;
+        height: 300px;
+        border: none;
+        display:block;
+        transform: translate(-5%, 0%);
+    }
+    .caja_imag {
+        display: none;
+    }
+
+    .caja_int{
+        display: none;
+    }
+
+    .caja_derecho{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caja_derecho p{
+        color: white;
+    }
+
+
+}
+
+iframe{
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
